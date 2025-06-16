@@ -47,7 +47,7 @@ st.markdown("<p style='text-align:center; color:gray;'>Upload a chest X-ray to a
 @st.cache_resource
 def load_model():
     torch.serialization.add_safe_globals({'ultralytics.nn.tasks.DetectionModel': DetectionModel})
-    return YOLO("C:/Users/satya/PycharmProjects/tb/td_detect.pt")
+    return YOLO("/td_detect.pt")
 
 model = load_model()
 
